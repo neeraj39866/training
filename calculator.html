@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#btn1
+		{
+			font-size: 50px;
+		}
+		#hlo
+		{
+			padding-top: 100px;
+			border-radius: 70px;
+		}
+		#k
+		{
+			border-radius: 10px;
+			width: 200px;
+			height: 30px;
+		padding-bottom: 10px;
+			margin-bottom: 25px;
+		}
+		p {
+    border-style: solid;
+      border-width: 5px;
+      width: 200px;
+      border-color: #888
+   /* border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;*/
+}
+		
+		
+	</style>
+</head>
+<body><center><div id="hlo">
+	<p  id="new" >Enter </p>
+	<!-- <input type="text" id="k" width=70px> --><br>
+	<button id="btn1" onclick="add()">+</button>
+	<button id="btn1" onclick="sub()">-&nbsp;</button>
+	<button id="btn1" onclick="mul()">*&nbsp; </button>
+	<button id="btn1" onclick="div()">/&nbsp;</button><br>
+	<button id="btn1" onclick="seven()">7</button>
+	<button id="btn1" onclick="eight()">8</button>
+	<button id="btn1" onclick="nine()">9&nbsp;</button>
+	<button id="btn1" onclick="equal()">=</button><br>
+	<button id="btn1" onclick="four()">4</button>
+	<button id="btn1" onclick="five()">5</button>
+	<button id="btn1" onclick="six()">6</button>
+	<button id="btn1" onclick="mod()">%</button><br>
+	<button id="btn1" onclick="one()">1</button>
+	<button id="btn1" onclick="two()">2</button>
+	<button id="btn1" onclick="three()">3</button>
+	<button id="btn1" onclick="dot()">.&nbsp;&nbsp;</button><br>
+	<button id="btn1" onclick="zero()">0</button></div></center>
+	
+	<script type="text/javascript">
+		var a;
+		var b;
+		
+		function one()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=1;
+		}
+		function two()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=2;
+		}
+		function three()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=3;
+		}
+		function four()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=4;
+		}
+		function five()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=5;
+		}
+		function six()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=6;
+		}
+		function seven()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=7;
+		}
+		function four()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=4;
+		}
+		function eight()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=8;
+		}
+		function nine()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=9;
+		}
+		function zero()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=0;
+		}
+		function add()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=a+b;
+		}
+		function sub()
+		{
+			// document.write("sub is",a-b);
+			document.getElementById("new").innerHTML=(a-b);
+		}
+		function mul()
+		{
+			// document.write("mul is",a*b);
+			document.getElementById("new").innerHTML=(a*b);
+		}
+		function div()
+		{
+			// document.write("division is",a/b);
+			document.getElementById("new").innerHTML= (a/b);
+		}
+		function mod()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML=(a%b);
+		}
+
+		
+	</script>
+
+</body>
+</html>

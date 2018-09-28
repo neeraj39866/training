@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var add=(function(){
+			var counter=0;
+			return function(){
+				return counter+=1;
+			}
+		})();
+	// 	var variable1="hello  ISI"
+	// 	var variable2=23
+	// 	var a=33;
+	// 	var b=10;
+	// 	var c="test";
+	// 	var d=12;
+	// 	// document.write(a/b)
+	// 	//document.write(a+c+b+d)
+	// 	document.write(a+b+c+d)
+	// // 	document.write(a+b+d)
+	// // 	document.write(variable1+variable2)
+	// // 	document.write(variable2)
+	// // 	document.write(typeof(variable1))
+	// // document.write("Hello pakistan!!!!!!!")
+	// document.write(a/b)
+	// var book="maths";
+	// if (book=="maths")
+	// {
+	// 	document.write("<b>History")
+	// }
+	// else
+	// {
+	// 	document.write("")
+	// }
+	// switch(book)
+	// {
+	// 	case"history":
+	// 	document.write("History book")
+	// 	//break;
+	// 	case "maths":
+	// 	document.write("maths")
+	// 	break;
+	// 	case "geo"
+	// 	document.write()
+	// }
+	// var count;
+	// for(count=0; count<10; count++)
+	// {
+	// 	if (count==4)
+	// 	{
+	// 		//continue;
+	// 		//break;
+	// 	}
+	// 	document.write("current count:" +count)
+	// 	document.write("<br/>");
+	// }
+	var names=['abc','xyz','pqr','do','while','for']
+	// for(var key in names)
+	// {
+	// 	document.write("And the name is: "+names[key]);
+	// 	document.write("<br/>")
+	// }
+	// for(var i=0;i<names.length;i++)
+	// {
+	// 	document.write("And the name is: "+names[i]);
+	// 	document.write("<br/>")
+	// }
+	// names.forEach(element =>{
+	// 	document.write("And the name is : "+element);
+	// 	document.write("<br/>");
+	// });
+	// var i=0;
+	// while(true)
+	// {
+
+	// 	document.write("<b><i>hello    :"+ names[i]);
+	// 	document.write("<br/>");
+	// 	if(i==4)
+	// 	{
+	// 		break;
+	// 	}
+	// 	i=i+1;
+
+	// }
+	// do{
+	// 	document.write("Current count: "+count+"<br/");
+	// 	count++;
+	// }
+	// while(count<5)
+
+	// do{
+	// 	document.write('ita a line');
+	// 	var ans=prompt("hello");
+	// 	}while(ans==1)
+	// 	document.write("loop stopped")
+	// function functionwithargument(name,age)
+	// {
+	// 	document.write("hiiii")
+	// 	document.write("<br/>");
+	// 	document.write("your name is :"+name);
+	// 	document.write("<br/>");
+	// 	document.write("your age is :"+age);
+	// 	document.write("<br/>");
+	// }
+	// function sum(a,b,c)
+	// {
+	// 	document.write(a+b+c);
+	// 	document.write("<br/>")
+	// }
+	// sum('a','4','4')
+	// sum(3,2,'a')
+	<p id="demo">0<p>
+		var button=document.getElementByid("counter")
+		c=0;
+	function counter()
+	{   
+		document.getElementByid("demo").innerHTML=add();
+	}
+	
+	//function  functionwithargument(1,2)
+
+	
+
+	</script>
+	<noscript>
+		sorry.....
+	</noscript>
+
+	<title></title>
+</head>
+<body>
+	<!-- <p>dont press this button</p> -->
+
+<input type="button" onclick="counter()" value="click">
+</body>
+
+</html>

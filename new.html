@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		i=1
+		function fun()
+		{
+		if(i<6){document.getElementById("abc").innerHTML=i;
+		}
+		else
+		{
+			// document.getElementById("bcd").innerHTML="yes";
+			document.getElementById("abc").innerHTML=i;
+			if(i>=5 && i<=10)
+			{
+				
+				// document.getElementById("efg").innerHTML="in between 5 and 10";
+				document.getElementById("efg").innerHTML="yes";
+			}
+			else if(i>10 && i<15)
+			{
+				document.getElementById('fg').innerHTML="GREATER THAN 10 less than 15";
+				document.getElementById("fg").innerHTML="yes";
+				document.getElementById("abc").innerHTML=i;
+			}
+			else
+			{
+				document.getElementById("kj").innerHTML="error";
+				document.getElementById("abc").innerHTML=i;
+				document.getElementById("fg").innerHTML="abe aur mat dabba";
+				document.getElementById("fg").disabled=true;
+			}
+
+		}i=i+1;
+		
+	}
+	</script>
+
+</head>
+<body>
+	<p>click to increase</p>
+	<p><input type="button" name="button" onclick="fun()" value="click"></p>
+	<p id ="abc"></p>
+	<p id="bcd"></p>
+	<p>Are clicks greater than 5</p>
+	<p id="efg"></p>
+	<p>Are clicks greater than 10</p>
+	<p id="fg"></p>
+	<p id="kj"></p>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*#btn1
+		{
+			background-color: white;
+			border-radius: 10px;
+			border-width: 50px;
+			font-size: 100px;
+		}*/
+		#new
+		{
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn1" onclick="add()">+</button>
+	<button id="btn1" onclick="sub()">-</button>
+	<button id="btn1" onclick="mul()">*</button>
+	<button id="btn1" onclick="div()">/</button>
+	<button id="btn1" onclick="mod()">%</button>
+	<div id="new"></div>
+
+	<script type="text/javascript">
+		// var a=4;
+		// var b=5;
+		// var c=8;
+		// var e="<br/>";
+		// document.write("a+b+c");
+		// document.write(e);
+		// //addition
+		// var e="<br/>";
+		// var add=a+b+c;
+		// document.write("result is"+add);
+		// document.write(e);
+		// //subtraction
+		// var sub=a-b-c;
+		// document.write("result is"+sub);
+		// document.write(e);
+		// //multiplication
+		// var mul=a*b*c;
+		// document.write("result is"+mul);
+		// document.write(e);
+		// //division
+		// var div=a/b/c;
+		// document.write("result is"+div);
+		// document.write(e);
+		// var a="This is the implementation os switch case";
+		// var marks=90;
+		// switch(marks)
+		// {
+		// 	case 90:
+		// 	document.write("A grade");
+		// 	break;
+		// 	case 80:
+		// 	document.write("B grade");
+		// 	break;
+		// 	case 70:
+		// 	document.write("C grade");
+		// 	break;
+		// 	default:
+		// 	document.write("Nothing");
+		// }
+		// a=18;
+		// if(a<18)
+		// 	document.write("Can`t Cast voting");
+		// else
+		// 	document.write("Can Cast voting");
+		var a=10;
+		var b=20;
+		function add()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML="Addition is"+(a+b);
+		}
+		function sub()
+		{
+			// document.write("sub is",a-b);
+			document.getElementById("new").innerHTML="Subtraction is"+(a-b);
+		}
+		function mul()
+		{
+			// document.write("mul is",a*b);
+			document.getElementById("new").innerHTML="Multiplication is"+(a*b);
+		}
+		function div()
+		{
+			// document.write("division is",a/b);
+			document.getElementById("new").innerHTML="Division is"+   (a/b);
+		}
+		function mod()
+		{
+			// document.write("sub is",a+b);
+			document.getElementById("new").innerHTML="mod is"+(a%b);
+		}
+
+	</script>
+</body>
+</html>

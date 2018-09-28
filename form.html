@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function validation()
+		{
+			var name=document.forms["regform"]["NAME"];
+			var email=document.forms["regform"]["email"];
+			var age=document.forms["regform"]["age"];
+			var what=document.forms["regform"]["subject"];
+			if(name.value=="")
+			{
+				alert("Enter name");
+				return false;
+			}
+			if(email.value=="")
+			{
+				alert("Enter email");
+				return false;
+			}
+			if(email.value.indexOf("@",0)<0)
+			{
+				alert("enter sahi email address");
+				return false;
+			}
+			if(email.value.indexOf(".",0)<0)
+			{
+				alert("enter sahi email address");
+				return false;
+			}
+			if(age.value=="")
+			{
+				alert("Enter age");
+				return false;
+			}
+		}
+		// function test()
+		// {
+		// 	alert("BHAR ISSEEEEEEEEEEEEEEEEEEE")
+		// 	document.write("shabash mere sher");
+		// }
+	</script>
+</head>
+<body><h1>Registration Form</h1>
+<form name="regform" onsubmit="validation()" method="post">
+	NAME: 
+	<input type="text" name="NAME" placeholder="NAME"><br>
+	EMAIL: 
+	<input type="text" name="email" placeholder="EMAIL"><br>
+	AGE:    
+	<input type="number" name="age" placeholder="age"><br>
+	STREAM:  
+	<select type="text" name="subject">
+		<option>CSE</option>
+		<option>MEC</option>
+		<option>POI</option>
+		<option>NAVJIT</option>
+
+	</select><br>
+	<input type="submit" value="SUBMIT" name="submit">
+</form>
+</body>
+</html>
