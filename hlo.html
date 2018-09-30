@@ -3,15 +3,25 @@
 <head>
 	<title></title>
 	<style type="text/css">
-		p {
-    border-top-style: dotted;
-    border-right-style: solid;
-    border-bottom-style: dotted;
-    border-left-style: solid;
-}
+		div
+		{
+			height: 200px;
+			width:200px;
+			background-color: #00aa00;
+		}
 	</style>
 </head>
-<body><p>hlo</p>
+<body><button  onclick="createContainer()">create container</button>
+	<script type="text/javascript">
+		function createContainer()
+		{
+			var div=document.createElement('div');
+			document.body.append(div);
+			var text=document.createTextNode("Hello Navjit");
+			div.append(text);
+			document.body.append(div);
+		}
+	</script>
 
 </body>
 </html>

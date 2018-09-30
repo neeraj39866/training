@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#new2
+		{
+			background-color: black;
+			height: 200px;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<button id="new" onmouseover="changecolor()" onmouseout="cc()">changeBGcolor</button>
+	<button id="new1" onclick="changetext()"> changetext</button>
+	<div id="new2"></div>
+	<div ><p id="new3">hello</p></div>
+	<script type="text/javascript">
+		function changecolor()
+		{
+			document.getElementById("new2").style.backgroundColor="red";
+		}
+		function cc()
+		{
+			document.getElementById("new2").style.backgroundColor="black";
+		}
+		function changetext()
+		{
+			document.getElementById("new3").innerHTML="Bye";
+		}
+	</script>
+
+</body>
+</html>
